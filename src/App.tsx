@@ -1,10 +1,12 @@
 import React from "react";
+import AppLayout from "./layouts/AppLayout";
+import Products from "./pages/Products/Products";
 
 function App() {
   return (
-    <div>
-      <h1>Glamit</h1>
-    </div>
+    <AppLayout>
+      <Products />
+    </AppLayout>
   );
 }
 
