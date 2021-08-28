@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Box, Grid, Stack, Text } from "@chakra-ui/react";
+import { Box, Stack, Text } from "@chakra-ui/react";
 import Filter from "../../components/Filter";
-import { ProductCard, ProductList } from "../../components";
+import { ProductList } from "../../components";
 import Product from "../../models/Product";
 import ApiService from "../../services/ApiService";
+import ProductListSkeleton from "../../components/ProductListSkeleton/ProductListSkeleton";
 
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -38,7 +39,7 @@ const Products: React.FC = () => {
           >
             Zapatillas
           </Text>
-          <Stack alignItems="flex-start" display={{ base: "none", lg: "flex" }}>
+          <Stack alignItems="flex-start" display={{ base: "none", lg: "flex" }} marginTop={2}>
             <Text color="textColor" fontSize="20px" fontWeight="bold">
               Filtrar
             </Text>
@@ -50,7 +51,7 @@ const Products: React.FC = () => {
             <Filter name="Color" values={["Amarillo", "Negro", "Verde", "Azul", "Blanco"]} />
           </Stack>
         </Box>
-        {products && <ProductList products={products} />}
+        {products.length ? <ProductList products={products} /> : <ProductListSkeleton />}
       </Stack>
     </Stack>
   );
