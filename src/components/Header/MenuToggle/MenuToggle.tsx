@@ -9,7 +9,7 @@ interface Props {
 
 const MenuToggle: React.FC<Props> = ({ toggle, isOpen }) => {
   return (
-    <Stack display={{ base: "block", md: "none" }} onClick={toggle}>
+    <Stack display={{ base: "block", lg: "none" }} onClick={toggle}>
       {isOpen ? (
         <IconButton
           _hover={{ bg: "transparent", ring: "none" }}
