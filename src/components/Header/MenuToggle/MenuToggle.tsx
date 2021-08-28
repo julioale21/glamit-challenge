@@ -1,6 +1,6 @@
 import React from "react";
 import { IconButton, Stack } from "@chakra-ui/react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaAngleUp } from "react-icons/fa";
 
 interface Props {
   toggle: () => void;
@@ -12,12 +12,14 @@ const MenuToggle: React.FC<Props> = ({ toggle, isOpen }) => {
     <Stack display={{ base: "block", md: "none" }} onClick={toggle}>
       {isOpen ? (
         <IconButton
+          _hover={{ bg: "transparent", ring: "none" }}
           aria-label=""
           backgroundColor="transparent"
-          icon={<FaBars color="white" size="27px" />}
+          icon={<FaAngleUp color="white" size="27px" />}
         />
       ) : (
         <IconButton
+          _hover={{ bg: "transparent", ring: "none" }}
           aria-label=""
           backgroundColor="transparent"
           icon={<FaBars color="white" size="27px" />}
