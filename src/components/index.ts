@@ -7,3 +7,5 @@ export { default as MenuLinks } from "./Footer/MenuLinks";
 export { default as MenuToggle } from "./Header/MenuToggle";
 export { default as ProductCard } from "./ProductCard";
 export { default as ProductList } from "./ProductList";
+export { default as SkeletonElement } from "./SkeletonElement";
+export { default as ProducListSkeleton } from "./ProductListSkeleton";
