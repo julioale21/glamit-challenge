@@ -13,6 +13,7 @@ const ProductList: React.FC<Props> = ({ products }) => {
       gap={3}
       paddingBottom={{ lg: "3em" }}
       templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+      width="100%"
     >
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
