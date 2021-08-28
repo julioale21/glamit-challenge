@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Grid, Stack, Text } from "@chakra-ui/react";
 import Filter from "../../components/Filter";
-import { ProductCard } from "../../components";
+import { ProductCard, ProductList } from "../../components";
 import Product from "../../models/Product";
 import ApiService from "../../services/ApiService";
 
@@ -24,8 +24,8 @@ const Products: React.FC = () => {
         direction={{ base: "column", lg: "row" }}
         marginTop={{ lg: "2em" }}
         marginX="auto"
-        maxWidth={{ md: "960px", xl: "1086px" }}
         spacing={8}
+        w={{ md: "960px", xl: "1086px" }}
       >
         <Box marginBottom="22px" minWidth={{ lg: "260px" }}>
           <Text
@@ -50,15 +50,7 @@ const Products: React.FC = () => {
             <Filter name="Color" values={["Amarillo", "Negro", "Verde", "Azul", "Blanco"]} />
           </Stack>
         </Box>
-        <Grid
-          gap={3}
-          paddingBottom={{ lg: "3em" }}
-          templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
-        >
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </Grid>
+        {products && <ProductList products={products} />}
       </Stack>
     </Stack>
   );

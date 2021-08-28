@@ -6,3 +6,4 @@ export { default as MenuIcons } from "./Header/MenuIcons";
 export { default as MenuLinks } from "./Footer/MenuLinks";
 export { default as MenuToggle } from "./Header/MenuToggle";
 export { default as ProductCard } from "./ProductCard";
+export { default as ProductList } from "./ProductList";
