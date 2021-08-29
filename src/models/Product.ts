@@ -3,4 +3,6 @@ export default interface Product {
   name: string;
   price: number;
   image: string;
+  sizes: string[];
+  color: string;
 }

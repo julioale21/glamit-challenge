@@ -6,8 +6,9 @@ interface Props {
   values: string[];
   isOpen?: boolean;
   toggle?: () => void;
+  onFilterSelected: (filter: string) => void;
 }
-const Filter: React.FC<Props> = ({ name, values, isOpen = false, toggle }) => {
+const Filter: React.FC<Props> = ({ name, values, isOpen = false, toggle, onFilterSelected }) => {
   return (
     <Stack as="section" w="100%">
       <Stack
@@ -24,7 +25,14 @@ const Filter: React.FC<Props> = ({ name, values, isOpen = false, toggle }) => {
       </Stack>
       <Stack display={isOpen ? "flex" : "none"}>
         {values.map((value, index) => (
-          <Text key={index} color="textColor" fontSize="16px" paddingX="1em">
+          <Text
+            key={index}
+            color="textColor"
+            cursor="pointer"
+            fontSize="16px"
+            paddingX="1em"
+            onClick={() => onFilterSelected(value)}
+          >
             {value}
           </Text>
         ))}
