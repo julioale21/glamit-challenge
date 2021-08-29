@@ -1,12 +1,15 @@
 import React from "react";
 import AppLayout from "./layouts/AppLayout";
-import Products from "./pages/Products/Products";
+import Products from "./pages/Products";
+import ProductContextProvider from "./context/ProductContextProvider";
 
 function App() {
   return (
-    <AppLayout>
-      <Products />
-    </AppLayout>
+    <ProductContextProvider>
+      <AppLayout>
+        <Products />
+      </AppLayout>
+    </ProductContextProvider>
   );
 }
 
