@@ -1,0 +1,10 @@
+.add-cart {
+  opacity: 0;
+  display: none;
+  transition: all 1s linear;
+}
+
+.product-card:hover .add-cart {
+  display: flex;
+  opacity: 1;
+}
