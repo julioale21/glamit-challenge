@@ -39,7 +39,7 @@ const Products: React.FC = () => {
         marginTop={{ lg: "2em" }}
         marginX="auto"
         spacing={8}
-        w={{ xl: "1086px" }}
+        w={{ md: "760px", xl: "1086px" }}
       >
         <Box marginBottom="22px" minWidth={{ lg: "260px" }}>
           <Text
