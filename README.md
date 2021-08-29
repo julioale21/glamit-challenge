@@ -86,6 +86,23 @@ The files are structured as follow:
         ├── services         # Servicios para conectar la App con el backend
     └── README.md            # The first page that the user will view when will visit the repository.
     
+ ## Extras
+ 
+ Se implementó de forma básica el carrito de compras. Al posicionarse sobre un producto se muestra en la parte superior derecha un botton carrito para agregar el producto.
+ 
+ Al agregar productos el icono del carrito en el header muestra la cantidad agregada.
+ 
+ Al abrir el carrito se muestran los productos seleccionados agrupados por id con la posibilidad de sumar o restar unidades.
+ 
+ Se muestra el precio total del mismo producto seleccionado y el precio total de la compra
+ 
+ Se agregó la  opción de mostrar u ocultar los filtros en version desktop
+ 
+ Se implementó la opción de filtrar por color o por talle pero solo de a uno por vez, no asi la de tipo de calzado.
+ 
+ Quedó pendiente agregar alguna opción para volver a ver todos los productos una vez que se selecciona el filtro para no inclumplir con el diseño solicitado.
+ 
+    
     
 ## Despliegue Local
 ```
