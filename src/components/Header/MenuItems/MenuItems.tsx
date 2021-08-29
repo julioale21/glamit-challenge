@@ -18,6 +18,8 @@ const MenuItems: React.FC<Props> = ({ isOpen }) => {
         direction={{ base: "column", lg: "row" }}
         justifyContent={{ lg: "space-between" }}
         marginBottom={{ base: "1em", lg: 0 }}
+        marginTop={{ md: "-0.5rem" }}
+        paddingBottom={{ md: 2 }}
         w={{ lg: "840px" }}
       >
         <Text color="menuText" fontSize="20px" textTransform="uppercase">
