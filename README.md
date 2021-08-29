@@ -67,7 +67,7 @@ Cualquier detalle que le quieras agregar es bienvenido, pero opcional, aquí alg
 
 ### Estructura del proyecto
 
-### Tools
+### Herramientas
 - ViteJS
 - React
 - Typescript
@@ -87,7 +87,7 @@ The files are structured as follow:
     └── README.md            # The first page that the user will view when will visit the repository.
     
     
-## Project setup
+## Despliegue Local
 ```
 Clonar el repositorio
 
