@@ -50,6 +50,7 @@ const Products: React.FC = () => {
         direction={{ base: "column", lg: "row" }}
         marginTop={{ lg: "2em" }}
         marginX="auto"
+        minW="70%"
         spacing={8}
         w={{ md: "760px", xl: "1086px" }}
       >
