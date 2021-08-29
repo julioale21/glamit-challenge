@@ -5,9 +5,10 @@ import { ProductCard } from "../../components";
 
 interface Props {
   products: Product[];
+  handleSelectedProduct: (product: Product) => void;
 }
 
-const ProductList: React.FC<Props> = ({ products }) => {
+const ProductList: React.FC<Props> = ({ products, handleSelectedProduct }) => {
   return (
     <Grid
       gap={3}
@@ -16,7 +17,11 @@ const ProductList: React.FC<Props> = ({ products }) => {
       width="100%"
     >
       {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
+        <ProductCard
+          key={product.id}
+          product={product}
+          onProductSelected={() => handleSelectedProduct(product)}
+        />
       ))}
     </Grid>
   );
