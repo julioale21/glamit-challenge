@@ -10,49 +10,49 @@
       "id": 2,
       "name": "Zapatilla 200-X",
       "price": 9800,
-      "image": "src/assets/products/zapatilla_2.jpg"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63"
     },
     {
       "id": 3,
       "name": "Zapatilla 3 Run",
       "price": 6500,
-      "image": "src/assets/products/zapatilla_3.jpg"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99"
     },
     {
       "id": 4,
       "name": "Zapatilla 3 Run",
       "price": 6500,
-      "image": "src/assets/products/zapatilla_3.jpg"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99"
     },
     {
       "id": 5,
       "name": "Zapatilla 1-XFK",
       "price": 5000,
-      "image": "src/assets/products/zapatilla_1.jpg"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_1.jpg?alt=media&token=c4d12dec-ba01-4319-a09a-7e4fc40a599d"
     },
     {
       "id": 6,
       "name": "Zapatilla 200-X",
       "price": 9800,
-      "image": "src/assets/products/zapatilla_2.jpg"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63"
     },
     {
       "id": 7,
       "name": "Zapatilla 1-XFK",
       "price": 5000,
-      "image": "src/assets/products/zapatilla_1.jpg"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_1.jpg?alt=media&token=c4d12dec-ba01-4319-a09a-7e4fc40a599d"
     },
     {
       "id": 8,
       "name": "Zapatilla 200-X",
       "price": 9800,
-      "image": "src/assets/products/zapatilla_2.jpg"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63"
     },
     {
       "id": 9,
       "name": "Zapatilla 3 Run",
       "price": 6500,
-      "image": "src/assets/products/zapatilla_3.jpg"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99"
     }
   ]
 }
