@@ -10,7 +10,7 @@ const ProductListSkeleton = () => {
       gap={3}
       paddingBottom={{ lg: "3em" }}
       templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
-      w="100%"
+      w={{ base: "340px", md: "100%" }}
     >
       {array.map((item) => (
         <Stack key={item} marginBottom="4em">
