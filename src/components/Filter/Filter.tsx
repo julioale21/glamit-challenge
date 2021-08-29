@@ -2,13 +2,21 @@ import React from "react";
 import { Stack, Text } from "@chakra-ui/react";
 
 interface Props {
-  name: string;
-  values: string[];
+  currentFilter: string;
   isOpen?: boolean;
-  toggle?: () => void;
+  name: string;
   onFilterSelected: (filter: string) => void;
+  toggle?: () => void;
+  values: string[];
 }
-const Filter: React.FC<Props> = ({ name, values, isOpen = false, toggle, onFilterSelected }) => {
+const Filter: React.FC<Props> = ({
+  currentFilter,
+  isOpen = false,
+  name,
+  onFilterSelected,
+  toggle,
+  values,
+}) => {
   return (
     <Stack as="section" w="100%">
       <Stack
@@ -30,6 +38,7 @@ const Filter: React.FC<Props> = ({ name, values, isOpen = false, toggle, onFilte
             color="textColor"
             cursor="pointer"
             fontSize="16px"
+            fontWeight={currentFilter === value ? "bold" : "normal"}
             paddingX="1em"
             onClick={() => onFilterSelected(value)}
           >

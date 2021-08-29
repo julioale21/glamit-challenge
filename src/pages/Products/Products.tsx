@@ -8,9 +8,10 @@ import ProductListSkeleton from "../../components/ProductListSkeleton/ProductLis
 import { ProductContext } from "../../context/ProductContext";
 
 const Products: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const { addToCart } = useContext(ProductContext);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [filterValue, setFilterValue] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const [isCategoriesOpen, setCategoriesOpen] = useState<boolean>(true);
   const [isSizesOpen, setSizesOpen] = useState<boolean>(true);
   const [isColorsOpen, setColorsOpen] = useState<boolean>(true);
@@ -31,10 +32,12 @@ const Products: React.FC = () => {
   };
 
   const filterBySize = (size: string) => {
+    setFilterValue(size);
     setFilteredProducts(products.filter((product) => product.sizes.includes(size)));
   };
 
   const filterByColor = (color: string) => {
+    setFilterValue(color);
     setFilteredProducts(
       products.filter((product) => product.color.toLowerCase() === color.toLowerCase()),
     );
@@ -70,6 +73,7 @@ const Products: React.FC = () => {
               Filtrar
             </Text>
             <Filter
+              currentFilter={filterValue}
               isOpen={isCategoriesOpen}
               name="Categorias"
               toggle={toggleCategories}
@@ -77,6 +81,7 @@ const Products: React.FC = () => {
               onFilterSelected={() => {}}
             />
             <Filter
+              currentFilter={filterValue}
               isOpen={isSizesOpen}
               name="Talle"
               toggle={toggleSizes}
@@ -84,6 +89,7 @@ const Products: React.FC = () => {
               onFilterSelected={filterBySize}
             />
             <Filter
+              currentFilter={filterValue}
               isOpen={isColorsOpen}
               name="Color"
               toggle={toggleColors}
