@@ -10,6 +10,9 @@ import { ProductContext } from "../../context/ProductContext";
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const { addToCart } = useContext(ProductContext);
+  const [isCategoriesOpen, setCategoriesOpen] = useState<boolean>(true);
+  const [isSizesOpen, setSizesOpen] = useState<boolean>(true);
+  const [isColorsOpen, setColorsOpen] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -24,6 +27,10 @@ const Products: React.FC = () => {
   const handleSelectedProduct = (product: Product) => {
     addToCart(product);
   };
+
+  const toggleCategories = () => setCategoriesOpen(!isCategoriesOpen);
+  const toggleSizes = () => setSizesOpen(!isSizesOpen);
+  const toggleColors = () => setColorsOpen(!isColorsOpen);
 
   return (
     <Stack bg={{ md: "#FAFAFA" }} minH="100vh" paddingX={{ base: "1.2rem", lg: 0 }}>
@@ -50,11 +57,23 @@ const Products: React.FC = () => {
               Filtrar
             </Text>
             <Filter
+              isOpen={isCategoriesOpen}
               name="Categorias"
+              toggle={toggleCategories}
               values={["Zapatillas", "Zapatos", "Botas", "Sandalias", "Pantuflas"]}
             />
-            <Filter name="Talle" values={["36", "38", "40", "42", "44"]} />
-            <Filter name="Color" values={["Amarillo", "Negro", "Verde", "Azul", "Blanco"]} />
+            <Filter
+              isOpen={isSizesOpen}
+              name="Talle"
+              toggle={toggleSizes}
+              values={["36", "38", "40", "42", "44"]}
+            />
+            <Filter
+              isOpen={isColorsOpen}
+              name="Color"
+              toggle={toggleColors}
+              values={["Amarillo", "Negro", "Verde", "Azul", "Blanco"]}
+            />
           </Stack>
         </Box>
         {products.length ? (
