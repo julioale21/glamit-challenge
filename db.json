@@ -4,55 +4,73 @@
       "id": 1,
       "name": "Zapatilla 1-XFK",
       "price": 5000,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_1.jpg?alt=media&token=c4d12dec-ba01-4319-a09a-7e4fc40a599d"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_1.jpg?alt=media&token=c4d12dec-ba01-4319-a09a-7e4fc40a599d",
+      "sizes": ["36", "38"],
+      "color": "Blanco"
     },
     {
       "id": 2,
       "name": "Zapatilla 200-X",
       "price": 9800,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63",
+      "sizes": ["38", "40", "42"],
+      "color": "Negro"
     },
     {
       "id": 3,
       "name": "Zapatilla 3 Run",
       "price": 6500,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99",
+      "sizes": ["38", "40", "42"],
+      "color": "Negro"
     },
     {
       "id": 4,
       "name": "Zapatilla 3 Run",
       "price": 6500,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99",
+      "sizes": ["40", "42"],
+      "color": "Negro"
     },
     {
       "id": 5,
       "name": "Zapatilla 1-XFK",
       "price": 5000,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_1.jpg?alt=media&token=c4d12dec-ba01-4319-a09a-7e4fc40a599d"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_1.jpg?alt=media&token=c4d12dec-ba01-4319-a09a-7e4fc40a599d",
+      "sizes": ["40", "42"],
+      "color": "Blanco"
     },
     {
       "id": 6,
       "name": "Zapatilla 200-X",
       "price": 9800,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63",
+      "sizes": ["42"],
+      "color": "Negro"
     },
     {
       "id": 7,
       "name": "Zapatilla 1-XFK",
       "price": 5000,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_1.jpg?alt=media&token=c4d12dec-ba01-4319-a09a-7e4fc40a599d"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_1.jpg?alt=media&token=c4d12dec-ba01-4319-a09a-7e4fc40a599d",
+      "sizes": ["42"],
+      "color": "Blanco"
     },
     {
       "id": 8,
       "name": "Zapatilla 200-X",
       "price": 9800,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_2.jpg?alt=media&token=60088888-c2f5-4c4c-bcfa-e7b0bc956f63",
+      "sizes": ["42", "44"],
+      "color": "Negro"
     },
     {
       "id": 9,
       "name": "Zapatilla 3 Run",
       "price": 6500,
-      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99"
+      "image": "https://firebasestorage.googleapis.com/v0/b/mis-aplicaciones-89dbc.appspot.com/o/zapatilla_3.jpg?alt=media&token=7e69fbe8-b3ea-4381-8bab-42aa92ceae99",
+      "sizes": ["44"],
+      "color": "Negro"
     }
   ]
 }
