@@ -6,6 +6,8 @@ import { ProductContext } from "../../../context/ProductContext";
 const MenuIcons: React.FC = () => {
   const { cart, openCart } = useContext(ProductContext);
 
+  const totalItems = cart.reduce((total, product) => total + product.quantity, 0);
+
   return (
     <Stack direction="row" spacing={0}>
       <IconButton
@@ -34,9 +36,9 @@ const MenuIcons: React.FC = () => {
           onClick={openCart}
         />
         <Stack position="absolute" right="25%" top="-20px">
-          {cart.length > 0 ? (
+          {totalItems > 0 ? (
             <Text color="white" fontWeight="bold">
-              {cart.length}
+              {totalItems}
             </Text>
           ) : null}
         </Stack>
