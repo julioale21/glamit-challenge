@@ -13,13 +13,7 @@ const Header = () => {
 
   return (
     <Stack as="header" bg="primary" boxShadow="0px 3px 6px #00000026">
-      <Stack
-        alignItems="center"
-        direction="row"
-        h="69px"
-        justifyContent="space-between"
-        paddingX={4}
-      >
+      <Stack alignItems="center" direction="row" h="69px" paddingX={4}>
         <MenuToggle isOpen={isOpen} toggle={toggle} />
         <Logo />
         <MenuIcons />
