@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiURL = "http://localhost:8000/products";
+const apiURL = "https://glamit-challenge.herokuapp.com/products";
 
 class ApiService {
   public static async fetchProducts() {
