@@ -28,12 +28,12 @@ const ProductCard: React.FC<Props> = ({ product, onProductSelected }) => {
       </Stack>
 
       <Stack
-        background="rgba(0,0,0,0.3)"
         className="add-cart"
         direction="row"
         height="100%"
         justifyContent="flex-end"
         left={0}
+        paddingRight={3}
         position="absolute"
         top={0}
         width="100%"
@@ -43,7 +43,7 @@ const ProductCard: React.FC<Props> = ({ product, onProductSelected }) => {
           _hover={{ bg: "transparent ", ring: "none" }}
           aria-label=""
           backgroundColor="transparent"
-          icon={<FaCartPlus color="white" size={30} />}
+          icon={<FaCartPlus color="black" size={30} />}
           onClick={onProductSelected}
         />
       </Stack>
