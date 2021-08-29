@@ -9,6 +9,7 @@ import { ProductContext } from "../../context/ProductContext";
 
 const Products: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
   const { addToCart } = useContext(ProductContext);
   const [isCategoriesOpen, setCategoriesOpen] = useState<boolean>(true);
   const [isSizesOpen, setSizesOpen] = useState<boolean>(true);
@@ -19,6 +20,7 @@ const Products: React.FC = () => {
       const products: Product[] = await ApiService.fetchProducts();
 
       setProducts(products);
+      setFilteredProducts(products);
     };
 
     fetchProducts();
@@ -26,6 +28,16 @@ const Products: React.FC = () => {
 
   const handleSelectedProduct = (product: Product) => {
     addToCart(product);
+  };
+
+  const filterBySize = (size: string) => {
+    setFilteredProducts(products.filter((product) => product.sizes.includes(size)));
+  };
+
+  const filterByColor = (color: string) => {
+    setFilteredProducts(
+      products.filter((product) => product.color.toLowerCase() === color.toLowerCase()),
+    );
   };
 
   const toggleCategories = () => setCategoriesOpen(!isCategoriesOpen);
@@ -61,23 +73,26 @@ const Products: React.FC = () => {
               name="Categorias"
               toggle={toggleCategories}
               values={["Zapatillas", "Zapatos", "Botas", "Sandalias", "Pantuflas"]}
+              onFilterSelected={() => {}}
             />
             <Filter
               isOpen={isSizesOpen}
               name="Talle"
               toggle={toggleSizes}
               values={["36", "38", "40", "42", "44"]}
+              onFilterSelected={filterBySize}
             />
             <Filter
               isOpen={isColorsOpen}
               name="Color"
               toggle={toggleColors}
               values={["Amarillo", "Negro", "Verde", "Azul", "Blanco"]}
+              onFilterSelected={(value) => filterByColor(value)}
             />
           </Stack>
         </Box>
         {products.length ? (
-          <ProductList handleSelectedProduct={handleSelectedProduct} products={products} />
+          <ProductList handleSelectedProduct={handleSelectedProduct} products={filteredProducts} />
         ) : (
           <ProductListSkeleton />
         )}
