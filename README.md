@@ -62,7 +62,7 @@ Cualquier detalle que le quieras agregar es bienvenido, pero opcional, aquí alg
 
 ## Demo
 
-[https://glamit-challenge-lxcts498n-julioale21.vercel.app/](https://glamit-challenge-lxcts498n-julioale21.vercel.app/)
+[https://glamit-challenge.vercel.app/](https://glamit-challenge.vercel.app/)
 
 
 ### Estructura del proyecto
